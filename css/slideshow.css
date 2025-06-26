@@ -1,0 +1,14 @@
+.scroll-container {
+  background-color: #FFB6C1;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.scroll-container img,
+.scroll-container video {
+  display: inline-block;
+  margin-right: 10px;
+  height: 200px;
+  vertical-align: top;
+}
