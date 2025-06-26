@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/panel.css">
+  <link rel="stylesheet" href="css/h1font.css">
+  <link rel="stylesheet" href="css/topbtn.css">
+
+<style>
+body {
+  font-family: Lucida Console, monospace;
+}
+h1 {
+  text-shadow: 4px 4px #708090;
+}
+img {
+  border-radius: 20px;
+}
+
+main {
+  border-left: 10px solid #708090;
+  border-right: 10px solid #708090;
+}
+.sidenav a:hover {
+  color: #708090;
+}
+    .description-box {
+      max-width: 50%;
+      margin: 20px auto;
+      padding: 15px;
+      border: 2px solid #708090;
+      border-radius: 15px;
+      background-color: #fffaf0;
+      font-size: 18px;
+      text-align: center;
+    }
+    #topbtn {
+      background-color: #708090;
+    }
+
+    #topbtn:hover {
+      background-color: #e6c765;
+    }
+</style>
+</head>
+<body bgcolor= #F9F9F9>
+  <button onclick="topFunction()" id="topbtn" title="Go to top">&#708;</button>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html" target="abc">Home</a>
+  <a href="biodata.html" target="abc">Biodata</a>
+  <a href="education.html" target="abc">Education</a>
+  <a href="skill.html" target="abc">Skill</a>
+  <a href="hobbies.html" target="abc">Hobbies & Interests</a>
+  <a href="gallery.html" target="abc">Gallery</a>
+  <a href="contact.html" target="abc">Contact</a>
+<br><br>
+<p style="font-size:80%; color:white; text-align:center;">&copy;2025 Akmal Haikal |<br> Last updated: <span id="demo"></span></p>
+</div>
+
+<span style="font-size:55px;cursor:pointer" onclick="openNav()">&equiv;</span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+
+    let mybutton = document.getElementById("topbtn");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+
+<main>
+	<h1><center>BIODATA</h1></center>
+	<img src="picture/me/6.jpg" style="float:left; width:154px; height:176 px;">
+    <div class="description-box" style="color:#708090;">
+      NAME: MUHAMMAD AKMAL HAIKAL BIN MOHAMED HIRMAN<p>AGE: 20 YEARS OLD<p>BIRTHDAY: 8 APRIL 2005<p>BORN: MELAKA<p>LIVE: NEGERI SEMBILAN<p>FAVOURITE FOOD: LASAGNA<p>
+    </div>
+</main>
+
+
+
+
+
+
+</body>
+</html> 
