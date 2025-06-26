@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/panel.css">
+  <link rel="stylesheet" href="css/h1font.css">
+  <link rel="stylesheet" href="css/topbtn.css">
+  <link rel="stylesheet" href="css/overlay.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <style>
+    body {
+      font-family: Lucida Console, monospace;
+    }
+
+    h1 {
+      text-shadow: 4px 4px #50C878;
+    }
+
+    h2 {
+      font-size: 35px;
+      font-family: impact, monospace;
+      letter-spacing: 15px;
+      text-shadow: 1px 0px #000000;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .sidenav a:hover {
+      color: #50C878;
+    }
+
+    summary {
+      font-size: 40px;
+      font-family: impact, monospace;
+      letter-spacing: 20px;
+      text-shadow: 4px 4px #006400;
+      text-align: center;
+    }
+
+    main {
+      border-left: 10px solid #50C878;
+      border-right: 10px solid #50C878;
+    }
+
+    main details:nth-of-type(2) a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .scroll-container {
+      background-color: #50C878;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 10px;
+    }
+
+    #topbtn {
+      background-color: #50C878;
+    }
+
+    #topbtn:hover {
+      background-color: #a38387;
+    }
+  </style>
+</head>
+<body bgcolor="#F9F9F9">
+
+  <button onclick="topFunction()" id="topbtn" title="Go to top">&#708;</button>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html" target="abc">Home</a>
+    <a href="biodata.html" target="abc">Biodata</a>
+    <a href="education.html" target="abc">Education</a>
+    <a href="skill.html" target="abc">Skill</a>
+    <a href="hobbies.html" target="abc">Hobbies & Interests</a>
+    <a href="gallery.html" target="abc">Gallery</a>
+    <a href="contact.html" target="abc">Contact</a>
+    <br><br>
+    <p style="font-size:80%; color:white; text-align:center;">
+      &copy;2025 Akmal Haikal |<br> Last updated: <span id="demo"></span>
+    </p>
+  </div>
+
+  <span style="font-size:55px;cursor:pointer" onclick="openNav()">&equiv;</span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+
+    let mybutton = document.getElementById("topbtn");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <main>
+    <h1><center>HOBBIES & INTERESTS</center></h1>
+
+    <h2>MY PERSONAL HOBBIES</h2>
+
+    <details>
+      <summary>Gunpla Building</summary>
+      <p style="text-align: justify;">
+        Gunpla building is the hobby of assembling and customizing plastic model kits from the Gundam anime series. It involves constructing detailed replicas of robots (called Mobile Suits) using plastic parts that snap together, often with additional painting, weathering, or modifications for a more personalized finish. The hobby encourages creativity, precision, and patience, making it a rewarding pastime for fans of anime, model-making, and mechanical design.
+      </p>
+      <p style="font-size: 25px;">My Personal Gunpla collection:</p>
+      <div class="scroll-container">
+        <img src="picture/gunpla/1.jpg" alt="1">
+        <img src="picture/gunpla/2.jpg" alt="1">
+        <img src="picture/gunpla/3.jpg" alt="1">
+        <img src="picture/gunpla/4.jpg" alt="1">
+        <img src="picture/gunpla/5.jpg" alt="1">
+        <img src="picture/gunpla/6.jpg" alt="1">
+        <img src="picture/gunpla/7.jpg" alt="1">
+        <img src="picture/gunpla/8.jpg" alt="1">
+        <img src="picture/gunpla/9.jpg" alt="1">
+        <img src="picture/gunpla/10.jpg" alt="1">
+        <img src="picture/gunpla/11.jpg" alt="1">
+        <img src="picture/gunpla/12.jpg" alt="1">
+        <img src="picture/gunpla/13.jpg" alt="1">
+        <img src="picture/gunpla/14.jpg" alt="1">
+        <img src="picture/gunpla/15.jpg" alt="1">
+        <img src="picture/gunpla/16.jpg" alt="1">
+        <img src="picture/gunpla/17.jpg" alt="1">
+        <img src="picture/gunpla/18.jpg" alt="1">
+        <img src="picture/gunpla/19.jpg" alt="1">
+        <img src="picture/gunpla/20.jpg" alt="1">
+      </div>
+    </details>
+
+    <hr>
+
+    <h2>MY PERSONAL INTEREST</h2>
+
+    <details>
+      <summary>Gaming</summary>
+
+      <h3><a href="https://www.honorofkings.com/my/" target="_blank">Honor of Kings</a></h3>
+      <center><img src="picture/gaming/honorking.png" width="500"></center>
+      <p>Honor of Kings is a multiplayer online battle arena video game developed by TiMi Studio Group and published by Tencent Games for iOS, HarmonyOS NEXT, and Android. The game was first released in mainland China on 26 November 2015.</p>
+      <p>This game is a 5 vs 5 multiplayer moba with a goal to destroy the enemy tower or base to win a match. The match can be divided into 3 part: Early game, Mid game, Late game, each part is 10 minutes. There are 5 main roles or lanes in this game Clash lane, Jungling, Mid lane, Farm lane, and Support.</p>
+      <p style="font-size: 25px;">Gameplay:</p>
+      <video width="720" height="240" controls style="display:block; margin:auto; width:600px;">
+        <source src="picture/gaming/hkgame.mp4" type="video/mp4">
+        <source src="picture/gaming/hkgame.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3><a href="https://subwaysurfers.com/" target="_blank">Subway Surfers</a></h3>
+      <center><img src="picture/gaming/subs.png" width="500"></center>
+      <p>Subway Surfers is a single player mobile gaming app and website developed by Kiloo. The aim of the game is to outrun a train inspector while dodging oncoming trains, barriers and other objects. Collecting coins on the way gives players advantages such as hover boards and high scores.</p>
+      <p style="font-size: 25px;">Gameplay:</p>
+      <video width="720" height="240" controls style="display:block; margin:auto; width:600px;">
+        <source src="picture/gaming/subs.mp4" type="video/mp4">
+        <source src="picture/gaming/subs.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3><a href="https://blockblastonline.com/" target="_blank">Block Blast</a></h3>
+      <center><img src="picture/gaming/block.png" width="300"></center>
+      <p>Block Blast is a puzzle game where players strategically place blocks on a grid to clear rows and columns, aiming to achieve high scores and prevent the grid from filling up.</p>
+      <p>The game also have an adventure mode, where you complete a task to proceeds to the next level and endless mode where you can try to get the highest highscore by clearing up the blocks. My current highscore is 30k.</p>
+      <p style="font-size: 25px;">Gameplay:</p>
+      <video width="720" height="240" controls style="display:block; margin:auto; width:600px;">
+        <source src="picture/gaming/block.mp4" type="video/mp4">
+        <source src="picture/gaming/block.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    </details>
+
+    <hr>
+
+    <details>
+      <summary>Music</summary>
+      <center><img src="picture/music/laufey.jpg" width="800" style="border-radius: 10px;"></center>
+      <p>Laufey Lín Bīng Jónsdóttir, known mononymously as Laufey, is an Icelandic singer-songwriter and musician. She rose to prominence in the early 2020s for her success as a jazz-inspired pop artist.</p>
+
+      <audio controls style="display:block; margin:auto; width:1000px;">
+        <source src="music/Magnolia.ogg" type="audio/ogg">
+        <source src="music/Magnolia.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <br>
+      <center><cite>Magnolia</cite> by Laufey. Released in 2021.</center>
+
+      <p>OTHER ALBUM</p>
+      <div class="music-wrapper">
+        <div class="container1">
+          <a href="https://genius.com/albums/Laufey/Bewitched" target="_blank">
+            <img src="picture/music/Bewitched.jpg" alt="Avatar" class="image1">
+          </a>
+          <div class="overlay1">Bewitched</div>
+        </div>
+
+        <div class="container1">
+          <a href="https://genius.com/albums/Laufey/Everything-i-know-about-love" target="_blank">
+            <img src="picture/music/Everything I Know About Love.jpg" alt="Avatar" class="image1">
+          </a>
+          <div class="overlay1" style="font-size:10px;">Everything I Know About Love</div>
+        </div>
+
+        <div class="container1">
+          <a href="https://genius.com/albums/Laufey/Typical-of-me?cover_art_id=983151" target="_blank">
+            <img src="picture/music/Typical of Me.jpg" alt="Avatar" class="image1">
+          </a>
+          <div class="overlay1">Typical of Me</div>
+        </div>
+
+        <div class="container1">
+          <a href="https://genius.com/albums/Laufey-and-iceland-symphony-orchestra/A-night-at-the-symphony" target="_blank">
+            <img src="picture/music/A Night at the Symphony.jpg" alt="Avatar" class="image1">
+          </a>
+          <div class="overlay1">A Night at the Symphony</div>
+        </div>
+      </div>
+    </details>
+
+    <hr>
+  </main>
+
+</body>
+</html>

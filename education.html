@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/panel.css">
+  <link rel="stylesheet" href="css/h1font.css">
+  <link rel="stylesheet" href="css/topbtn.css">
+  <style>
+    body {
+      font-family: Lucida Console, monospace;
+    }
+
+    h1 {
+      text-shadow: 4px 4px #4682B4;
+    }
+
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      font-family: Lucida Console, monospace;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+
+    thead th {
+      background-color: #4682B4;
+      color: white;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #79a9d9;
+      color: black;
+    }
+
+    tfoot td {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    main {
+      border-left: 10px solid #4682B4;
+      border-right: 10px solid #4682B4;
+    }
+
+    .sidenav a:link,
+    .sidenav a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    .sidenav a:hover {
+      color: #4682B4;
+    }
+
+    main a:link {
+      color: #D4AF37;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    main a:visited {
+      color: #195e1e;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    #topbtn {
+      background-color: #4682B4;
+    }
+
+    #topbtn:hover {
+      background-color: #607e96;
+    }
+  </style>
+</head>
+
+<body bgcolor="#F9F9F9">
+
+  <button onclick="topFunction()" id="topbtn" title="Go to top">&#708;</button>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html" target="abc">Home</a>
+    <a href="biodata.html" target="abc">Biodata</a>
+    <a href="education.html" target="abc">Education</a>
+    <a href="skill.html" target="abc">Skill</a>
+    <a href="hobbies.html" target="abc">Hobbies & Interests</a>
+    <a href="gallery.html" target="abc">Gallery</a>
+    <a href="contact.html" target="abc">Contact</a>
+    <br><br>
+    <p style="font-size:80%; color:white; text-align:center;">
+      &copy;2025 Akmal Haikal |<br> Last updated: <span id="demo"></span>
+    </p>
+  </div>
+
+  <span style="font-size:55px; cursor:pointer" onclick="openNav()">&equiv;</span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+
+    let mybutton = document.getElementById("topbtn");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <main>
+    <h1><center>EDUCATION</center></h1>
+
+    <table class="center">
+      <thead>
+        <tr>
+          <th rowspan="2" style="text-align:center;">Level</th>
+          <th colspan="2" style="text-align:center;">Institution</th>
+          <th rowspan="2" style="text-align:center;">Year</th>
+          <th rowspan="2" style="text-align:center;">Achievement</th>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>Logo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center;">Primary</td>
+          <td><a href="https://www.facebook.com/p/SK-Serting-Ulu-RASMI-100063733624538/" target="_blank">Sekolah Kebangsaan Serting Ulu</a></td>
+          <td style="text-align:center;"><img src="picture/sksu.png" alt="sksu logo" height="80"></td>
+          <td style="text-align:center;">2012-2017</td>
+          <td style="text-align:center;">UPSR 3A</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">Secondary</td>
+          <td><a href="https://www.facebook.com/p/sekolah-menengah-agama-dato-haji-mustafa-100067648792398/" target="_blank">Sekolah Menengah Agama Dato 'Haji Mustafa</a></td>
+          <td style="text-align:center;"><img src="picture/smadhm.png" alt="smadhm logo" height="80"></td>
+          <td style="text-align:center;">2018-2023</td>
+          <td style="text-align:center;">SPM 5A</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">University</td>
+          <td><a href="https://kedah.uitm.edu.my/" target="_blank">UiTM Cawangan Kedah</a></td>
+          <td style="text-align:center;"><img src="picture/uitm.png" alt="uitm logo" height="80"></td>
+          <td style="text-align:center;">2023-Present</td>
+          <td style="text-align:center;">Current CGPA 3.47</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" style="text-align:center; font-style: italic; background-color: #f0f0f0;">Education timeline overview</td>
+        </tr>
+      </tfoot>
+    </table>
+  </main>
+
+</body>
+</html>

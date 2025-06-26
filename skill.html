@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/panel.css">
+  <link rel="stylesheet" href="css/h1font.css">
+  <link rel="stylesheet" href="css/topbtn.css">
+
+  <style>
+    body {
+      font-family: Lucida Console, monospace;
+    }
+
+    h1 {
+      text-shadow: 4px 4px #FF4500;
+    }
+
+    h2 {
+      text-shadow: 1px 2px #FF4500;
+    }
+
+    ul {
+      font-size: 26px;
+    }
+
+    .sidenav a:hover {
+      color: #FF4500;
+    }
+
+    main {
+      border-left: 10px solid #FF4500;
+      border-right: 10px solid #FF4500;
+    }
+
+    #topbtn {
+      background-color: #FF4500;
+    }
+
+    #topbtn:hover {
+      background-color: #a38387;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 2px dashed #f7946f;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 230px;
+      background-color: gray;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+  </style>
+</head>
+
+<body bgcolor="#F9F9F9">
+
+  <button onclick="topFunction()" id="topbtn" title="Go to top">&#708;</button>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html" target="abc">Home</a>
+    <a href="biodata.html" target="abc">Biodata</a>
+    <a href="education.html" target="abc">Education</a>
+    <a href="skill.html" target="abc">Skill</a>
+    <a href="hobbies.html" target="abc">Hobbies & Interests</a>
+    <a href="gallery.html" target="abc">Gallery</a>
+    <a href="contact.html" target="abc">Contact</a>
+    <br><br>
+    <p style="font-size:80%; color:white; text-align:center;">
+      &copy;2025 Akmal Haikal |<br> Last updated: <span id="demo"></span>
+    </p>
+  </div>
+
+  <span style="font-size:55px;cursor:pointer" onclick="openNav()">&equiv;</span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+
+    let mybutton = document.getElementById("topbtn");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <main>
+    <h1><center>SKILL</center></h1>
+
+    <h2>LANGUAGES SKILLS</h2>
+    <ul>
+      <li>MALAY (MOTHER TOUGUE)</li>
+      <li>ENGLISH (UPPER-INTERMEDIATE)</li>
+      <li>ARABIC (BASIC)</li>
+      <li>SPANISH (UBASIC)</li>
+      <li>JAPAN (BASIC)</li>
+    </ul>
+
+    <h2>TECHNICAL SKILLS</h2>
+    <ul>
+      <li>
+        <div class="tooltip">ADOBE APPLICATIONS
+          <span class="tooltiptext">
+            <ul>
+              <li>PHOTOSHOP</li>
+              <li>ILLUSTRATOR</li>
+              <li>INDESIGN</li>
+              <li>ANIMATE</li>
+              <li>LIGHTROOM</li>
+            </ul>
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="tooltip">MICROSOFT APPLICATIONS
+          <span class="tooltiptext">
+            <ul>
+              <li>WORD</li>
+              <li>EXCEL</li>
+              <li>POWERPOINT</li>
+              <li>ONENOTE</li>
+              <li>MICROSOFT FORMS</li>
+            </ul>
+          </span>
+        </div>
+      </li>
+      <li>CANVA</li>
+      <li>CODING INTERMEDIATE</li>
+    </ul>
+
+    <h2>OTHER SKILLS</h2>
+    <ul>
+      <li>LIBRARY CLASSIFICATION INTERMIDIATE</li>
+      <li>PUBLIC SPEAKING</li>
+      <li>GROUP LEADING</li>
+      <li>DRAWING SKILL</li>
+    </ul>
+  </main>
+
+</body>
+</html>

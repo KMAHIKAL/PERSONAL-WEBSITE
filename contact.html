@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/panel.css">
+  <link rel="stylesheet" href="css/h1font.css">
+  <link rel="stylesheet" href="css/topbtn.css">
+  <style>
+    body {
+      font-family: Lucida Console, monospace;
+    }
+
+    h1 {
+      text-shadow: 4px 4px #B22222;
+    }
+
+    .sidenav a:hover {
+      color: #B22222;
+    }
+
+    main {
+      border-left: 10px solid #B22222;
+      border-right: 10px solid #B22222;
+    }
+
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    table {
+      font-family: Lucida Console, Arial, sans-serif;
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 90%;
+      border: 2px solid #B22222;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    td, th {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #B22222;
+    }
+
+    #topbtn {
+      background-color: #B22222;
+    }
+
+    #topbtn:hover {
+      background-color: #7a4b4b;
+    }
+  </style>
+</head>
+
+<body bgcolor="#F9F9F9">
+
+  <button onclick="topFunction()" id="topbtn" title="Go to top">&#708;</button>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html" target="abc">Home</a>
+    <a href="biodata.html" target="abc">Biodata</a>
+    <a href="education.html" target="abc">Education</a>
+    <a href="skill.html" target="abc">Skill</a>
+    <a href="hobbies.html" target="abc">Hobbies & Interests</a>
+    <a href="gallery.html" target="abc">Gallery</a>
+    <a href="contact.html" target="abc">Contact</a>
+    <br><br>
+    <p style="font-size:80%; color:white; text-align:center;">
+      &copy;2025 Akmal Haikal |<br>
+      Last updated: <span id="demo"></span>
+    </p>
+  </div>
+
+  <span style="font-size:55px; cursor:pointer" onclick="openNav()">&equiv;</span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+
+    let mybutton = document.getElementById("topbtn");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <main>
+    <h1><center>CONTACT</center></h1>
+
+    <table class="center">
+      <tr>
+        <th style="width:20%; text-align: center;">
+          <i style="font-size:64px" class="fa">&#xf2ba;</i>
+        </th>
+        <th style="width:80%; text-align: center; font-size:37px;">
+          2023625524@student.uitm.edu.my
+        </th>
+      </tr>
+    </table>
+    <br>
+    <table class="center">
+      <tr>
+        <th style="width:20%; text-align: center; font-size:64px;">
+          &#9742;
+        </th>
+        <th style="width:80%; text-align: center; font-size:37px;">
+          +60 17-276-5967
+        </th>
+      </tr>
+    </table>
+    <br>
+    <table class="center">
+      <tr>
+        <th style="width:20%; text-align: center; font-size:64px;">
+          <i class="fa fa-home"></i>
+        </th>
+        <th style="width:80%; text-align: center; font-size:37px;">
+          134, Block 6, Felda Raja Alias 2, 72120, Bandar Seri Jempol, Negeri Sembilan
+        </th>
+      </tr>
+    </table>
+
+  </main>
+
+</body>
+</html>

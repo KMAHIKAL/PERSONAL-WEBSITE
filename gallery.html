@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/panel.css">
+  <link rel="stylesheet" href="css/h1font.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/topbtn.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <style>
+    body {
+      font-family: Lucida Console, monospace;
+      background-color: #F9F9F9;
+    }
+
+    h1 {
+      text-shadow: 4px 4px #FFB6C1;
+      text-align: center;
+    }
+    h2 {
+      font-size: 35px;
+      font-family: impact, monospace;
+      letter-spacing: 15px;
+      text-shadow: 1px 0px #000000;
+      text-align: center;
+    }
+
+    .sidenav a:hover {
+      color: #FFB6C1;
+    }
+
+    main {
+      border-left: 10px solid #FFB6C1;
+      border-right: 10px solid #FFB6C1;
+      padding: 20px;
+      min-height: 1000px;
+    }
+    #topbtn {
+     background-color: #FFB6C1;
+    }
+
+    #topbtn:hover {
+     background-color: #a38387;
+    }
+  </style>
+</head>
+
+<body>
+
+<button onclick="topFunction()" id="topbtn" title="Go to top">&#708;</button>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html" target="abc">Home</a>
+  <a href="biodata.html" target="abc">Biodata</a>
+  <a href="education.html" target="abc">Education</a>
+  <a href="skill.html" target="abc">Skill</a>
+  <a href="hobbies.html" target="abc">Hobbies & Interests</a>
+  <a href="gallery.html" target="abc">Gallery</a>
+  <a href="contact.html" target="abc">Contact</a>
+  <br><br>
+  <p style="font-size:80%; color:white; text-align:center;">
+    &copy;2025 Akmal Haikal<br>
+    Last updated: <span id="demo"></span>
+  </p>
+</div>
+
+<span style="font-size:55px;cursor:pointer" onclick="openNav()">&equiv;</span>
+
+<main>
+  <h1>GALLERY</h1>
+
+  <div class="gallery-wrapper">
+    <div class="gallery">
+      <a href="#me">
+        <img src="picture/me.jpg" alt="me">
+      </a>
+      <div class="desc">ME</div>
+    </div>
+
+    <div class="gallery">
+      <a href="#family">
+        <img src="picture/family.jpg" alt="family">
+      </a>
+      <div class="desc">FAMILY</div>
+    </div>
+
+    <div class="gallery">
+      <a href="#friends">
+        <img src="picture/friends.jpg" alt="friends">
+      </a>
+      <div class="desc">FRIENDS</div>
+    </div>
+
+    <div class="gallery">
+      <a href="#cat">
+        <img src="picture/cat1.jpg" alt="cat">
+      </a>
+      <div class="desc">CAT</div>
+    </div>
+  </div>
+
+  <div style="clear: both;"></div>
+
+<p><h2 id="me"><center>ME</h2></center>
+
+  <div class="scroll-container">
+    <img src="picture/me/1.jpg" alt="1">
+    <img src="picture/me/2.jpg" alt="1">
+    <img src="picture/me/3.jpg" alt="1">
+    <img src="picture/me/4.jpg" alt="1">
+    <img src="picture/me/5.jpg" alt="1">
+    <img src="picture/me/6.jpg" alt="1">
+    <img src="picture/me/7.jpg" alt="1">
+    <img src="picture/me/8.jpg" alt="1">
+    <img src="picture/me/9.jpg" alt="1">
+    <img src="picture/me/10.jpg" alt="1">
+    <img src="picture/me/11.jpg" alt="1">
+    <img src="picture/me/12.jpg" alt="1">
+    <img src="picture/me/13.jpg" alt="1">
+    <img src="picture/me/14.jpg" alt="1">
+    <img src="picture/me/15.jpg" alt="1">
+    <img src="picture/me/16.jpg" alt="1">
+    <img src="picture/me/17.jpg" alt="1">
+    <img src="picture/me/18.jpg" alt="1">
+    <img src="picture/me/19.jpg" alt="1">
+    <img src="picture/me/20.jpg" alt="1">
+    <img src="picture/me/21.jpg" alt="1">
+    <img src="picture/me/22.jpg" alt="1">
+  </div>
+
+<p><h2 id="family"><center>FAMILY</h2></center>
+
+  <div class="scroll-container">
+    <img src="picture/family/1.jpg" alt="family">
+    <img src="picture/family/2.jpg" alt="family">
+    <img src="picture/family/3.jpg" alt="family">
+    <img src="picture/family/4.jpg" alt="family">
+    <img src="picture/family/5.jpg" alt="family">
+    <img src="picture/family/6.jpg" alt="family">
+    <img src="picture/family/7.jpg" alt="family">
+    <img src="picture/family/8.jpg" alt="family">
+    <img src="picture/family/9.jpg" alt="family">
+    <img src="picture/family/10.jpg" alt="family">
+    <img src="picture/family/11.jpg" alt="family">
+  </div>
+
+<p><h2 id="friends"><center>FRIENDS</h2></center>
+  <div class="scroll-container">
+    <img src="picture/friends/1.jpg" alt="friends">
+    <img src="picture/friends/2.jpg" alt="friends">
+    <img src="picture/friends/3.jpg" alt="friends">
+    <img src="picture/friends/4.jpg" alt="friends">
+    <img src="picture/friends/5.jpg" alt="friends">
+    <img src="picture/friends/6.jpg" alt="friends">
+    <img src="picture/friends/7.jpg" alt="friends">
+    <img src="picture/friends/8.jpg" alt="friends">
+    <img src="picture/friends/9.jpg" alt="friends">
+    <img src="picture/friends/10.jpg" alt="friends">
+    <img src="picture/friends/11.jpg" alt="friends">
+    <img src="picture/friends/12.jpg" alt="friends">
+    <img src="picture/friends/13.jpg" alt="friends">
+    <img src="picture/friends/14.jpg" alt="friends">
+    <img src="picture/friends/15.jpg" alt="friends">
+    <img src="picture/friends/16.jpg" alt="friends">
+    <img src="picture/friends/17.jpg" alt="friends">
+    <img src="picture/friends/18.jpg" alt="friends">
+  </div>
+
+<p><h2 id="cat"><center>CAT</h2></center>
+  <div class="scroll-container">
+    <img src="picture/cat/1.jpg" alt="cat">
+    <img src="picture/cat/2.jpg" alt="cat">
+    <img src="picture/cat/3.jpg" alt="cat">
+    <img src="picture/cat/4.jpg" alt="cat">
+  <video width="210" controls>
+    <source src="picture/cat/1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <img src="picture/cat/5.jpg" alt="cat">
+    <img src="picture/cat/6.jpg" alt="cat">
+    <img src="picture/cat/7.jpg" alt="cat">
+    <img src="picture/cat/8.jpg" alt="cat">
+    <img src="picture/cat/9.jpg" alt="cat">
+    <img src="picture/cat/10.jpg" alt="cat">
+    <img src="picture/cat/11.jpg" alt="cat">
+    <img src="picture/cat/12.jpg" alt="cat">
+    <img src="picture/cat/13.jpg" alt="cat">
+    <img src="picture/cat/14.jpg" alt="cat">
+  <video width="210" controls>
+    <source src="picture/cat/2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <img src="picture/cat/15.jpg" alt="cat">
+    <img src="picture/cat/16.jpg" alt="cat">
+    <img src="picture/cat/17.jpg" alt="cat">
+    <img src="picture/cat/18.jpg" alt="cat">
+    <img src="picture/cat/19.jpg" alt="cat">
+    <img src="picture/cat/20.jpg" alt="cat">
+    <img src="picture/cat/21.jpg" alt="cat">
+    <img src="picture/cat/22.jpg" alt="cat">
+    <img src="picture/cat/23.jpg" alt="cat">
+  </div>
+
+
+</main>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  document.getElementById("demo").innerHTML = document.lastModified;
+
+  let mybutton = document.getElementById("topbtn");
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+</script>
+
+</body>
+</html>

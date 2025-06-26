@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/panel.css">
+  <link rel="stylesheet" href="css/topbtn.css">
+  <style>
+    body {
+      font-family: Lucida Console, monospace;
+    }
+
+    h2 {
+      font-size: 50px;
+      font-family: impact, monospace;
+      letter-spacing: 15px;
+      text-shadow: 4px 4px #D4AF37;
+    }
+
+    main {
+      border-left: 10px solid #D4AF37;
+      border-right: 10px solid #D4AF37;
+    }
+
+    .description-box {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+      border: 2px solid #D4AF37;
+      border-radius: 15px;
+      background-color: #fffaf0;
+      font-size: 18px;
+      text-align: center;
+    }
+    #topbtn {
+      background-color: #D4AF37;
+    }
+
+    #topbtn:hover {
+      background-color: #e6c765;
+    }
+    @keyframes zoomInOut {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.3);
+      }
+    }
+
+    .zoom-text {
+      display: inline-block;
+      animation: zoomInOut 2s;
+      animation-iteration-count: 6;
+    }
+  </style>
+</head>
+
+<body bgcolor="#F9F9F9">
+
+  <button onclick="topFunction()" id="topbtn" title="Go to top">&#708;</button>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html" target="abc">Home</a>
+    <a href="biodata.html" target="abc">Biodata</a>
+    <a href="education.html" target="abc">Education</a>
+    <a href="skill.html" target="abc">Skill</a>
+    <a href="hobbies.html" target="abc">Hobbies & Interests</a>
+    <a href="gallery.html" target="abc">Gallery</a>
+    <a href="contact.html" target="abc">Contact</a>
+    <br><br>
+    <p style="font-size:80%; color:white; text-align:center;">
+      &copy;2025 Akmal Haikal |<br>
+      Last updated: <span id="demo"></span>
+    </p>
+  </div>
+
+  <span style="background-color:white;font-size:55px;cursor:pointer;" onclick="openNav()">&equiv;</span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    let text = document.lastModified;
+    document.getElementById("demo").innerHTML = text;
+
+    let mybutton = document.getElementById("topbtn");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <main>
+    <h1 style="font-family:impact; font-size:500%;"><center><img src="picture/uitm.png" style="width:212px;height:94px;"> IML254</center></h1>
+    <h2 style="font-family:impact; font-size:300%;"><center>WELCOME TO MY PERSONAL WEBSITE</center></h2>
+
+    <div class="description-box" style="color:#D4AF37;">
+      This personal website was created for the subject <i>IML254, Introduction to Web Content Development</i>, 
+      as part of the <i>Diploma in Library Informatics (CDIM144)</i>. It includes information about 
+      <b>Biodata</b>, <b>Education</b>, <b>Skill</b>, <b>Hobbies & Interests</b>, <b>Gallery</b>, and <b>Contact</b>.
+      <br><br>
+      <span class="zoom-text" style="font-size:30px;">Thank you for visiting</span>
+      <br>
+    </div>
+  </main>
+
+</body>
+</html>
